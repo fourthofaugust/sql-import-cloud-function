@@ -2,8 +2,9 @@ const {google} = require("googleapis");
 const {auth} = require("google-auth-library");
 const sqladmin = google.sqladmin("v1beta4");
 
+// This function is not production ready
 exports.loadData = (event, context) => {
-//TODO Can I use async at an event function level?
+// TODO Can I use async at an event function level?
     async function triggerDataLoad(gcsEvent) {
         try {
             const authRes = await auth.getApplicationDefault();
