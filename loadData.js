@@ -35,7 +35,7 @@ exports.loadData = (event, context) => {
             });
 
         } catch (err) {
-            console.error('Error retrieving default auth credentials...);
+            console.error('Error retrieving default auth credentials...');
             console.error(err);
         }
     }
