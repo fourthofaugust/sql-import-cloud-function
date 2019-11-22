@@ -1,6 +1,6 @@
 const {google} = require("googleapis");
 const {auth} = require("google-auth-library");
-var sqladmin = google.sqladmin("v1beta4");
+const sqladmin = google.sqladmin("v1beta4");
 
 exports.loadData = (event, context) => {
 //TODO Can I use async at an event function level?
@@ -23,7 +23,7 @@ exports.loadData = (event, context) => {
                 auth: authClient,
             };
 
-            sqladmin.instances.import(request, function (err, response) {
+            sqladmin.instances.import(request, (err, response) => {
                 if (err) {
                     console.error('Error connecting to Cloud SQL');
                     console.error(err);
