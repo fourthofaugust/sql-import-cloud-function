@@ -1,0 +1,11 @@
+{
+  "name": "sql-import-cloud-function",
+  "author": "fourthofaugust",
+  "license": "MIT",
+  "version": "0.0.1",
+  "dependencies": {
+    "@google-cloud/storage": "^1.6.0",
+    "googleapis": "^39.2.0",
+    "google-auth-library": "3.1.2"
+  }
+}
